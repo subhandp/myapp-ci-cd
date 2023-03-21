@@ -7,6 +7,13 @@ it('Call the /devops endpoint', async ()=> {
     expect(res.status).toBe(200)
     expect(res.text).toBe('devops start journey at 19/03/2023')
 })
+
+it('Call the /baru endpoint', async ()=> {
+    const res = await request.get('/baru')
+    expect(res.status).toBe(200)
+    expect(res.text).toBe('api baru')
+})
+
 it('Call the / endpoint', async () => {
     const res = await request.get('/')
     expect(res.status).toBe(200)
