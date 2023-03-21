@@ -5,7 +5,7 @@ const request = supertest(app)
 it('Call the /cicd endpoint', async ()=> {
     const res = await request.get('/cicd')
     expect(res.status).toBe(200)
-    expect(res.text).toBe('cicd')
+    expect(res.text).toBe('cicd2')
 })
 
 it('Call the /baru endpoint', async ()=> {
